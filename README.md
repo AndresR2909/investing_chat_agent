@@ -91,7 +91,6 @@ Para lanzar la interfaz de usuario, puedes ejecutar cualquiera de las siguientes
   ```bash
   streamlit run src/app/chat/chat_app.py
   ```
-![alt text](image-2.png)
 
 ![alt text](image-3.png)
 
