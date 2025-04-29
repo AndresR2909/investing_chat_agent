@@ -45,7 +45,7 @@ El sistema utiliza las siguientes fuentes de datos para:
 
 ## Agente BASADO EN llM
 
-El agente utiliza modelos de lenguaje (LLM) y una arquitectura supervisor-workers usando langrap y langchain para dar respuestas personalizadas:
+El agente utiliza modelos de lenguaje (LLM) y una arquitectura supervisor-workers usando langraph y langchain para dar respuestas personalizadas:
 
 - **llm**:
 [tools tahoo finance](src/tools/custom_yahoo_finance_tools.py)
