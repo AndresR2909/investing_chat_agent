@@ -1,5 +1,7 @@
 import sys
 import os
+import json
+import pandas as pd
 import streamlit as st
 
 # fmt: off
@@ -89,5 +91,43 @@ elif menu == "Grafo Agente":
     )
 
 elif menu == "Metricas evaluación":
-    st.subheader("Metricas de evaluacion del agente")
-    st.info("Basado en dataset de 10 preguntas y respuestas evaluar el sistema.")
+    st.title("📈 Resultados de Evaluación")
+
+    # Cargar resultados desde el archivo run_eval_results.json
+    try:
+        with open(
+            "src/app/evaluation/run_eval_results.json", "r", encoding="utf-8"
+        ) as f:
+            results = json.load(f)
+    except FileNotFoundError:
+        st.error(
+            "No se encontró el archivo run_eval_results.json. Asegúrate de ejecutar primero el script de evaluación."
+        )
+        st.stop()
+
+    if not results:
+        st.warning("El archivo de resultados está vacío.")
+        st.stop()
+
+    # Convertir resultados a DataFrame
+    data = []
+    for item in results:
+        data.append(
+            {
+                "Pregunta": item.get("question"),
+                "Prompt": item.get("reference_answer"),
+                "Bot": item.get("bot_answer"),
+                "Evaluación": item.get("evaluation"),
+            }
+        )
+
+    df = pd.DataFrame(data)
+    st.dataframe(df)
+
+    # Agrupado
+    st.subheader("📈 Promedio por configuración")
+    grouped = df["Evaluación"].value_counts(normalize=True).reset_index()
+    grouped.columns = ["Evaluación", "Precisión"]
+    grouped["Precisión"] *= 100
+
+    st.bar_chart(grouped.set_index("Evaluación")[["Precisión"]])
