@@ -119,7 +119,7 @@ En la carpeta [`notebooks/`](notebooks/) encontrarás ejemplos prácticos para e
 - [`notebooks/load_youtube_Video_Transcript_to_vdb.ipynb`](src/notebooks/load_youtube_Video_Transcript_to_vdb.ipynb):
   Explica cómo cargar transcripciones de videos de YouTube de expertos en inversión y almacenarlas en la base de datos vectorial (Pinecone) para su posterior análisis y recuperación. Incluye ejemplos de extracción y procesamiento de texto.
 
-- [`notebooks/Tool Calling News.ipynb`](notebooks/Tool%20Calling%20News.ipynb):
+- [`notebooks/Tool Calling News.ipynb`](src/notebooks/Tool%20Calling%20News.ipynb):
   Demuestra cómo obtener noticias financieras desde fuentes externas y generar resúmenes automáticos utilizando modelos de lenguaje. Permite comparar el texto original con el resumen generado.
 
 - [`notebooks/test_supervisor_graph.ipynb`](src/notebooks/test_supervisor_graph.ipynb):
