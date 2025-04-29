@@ -62,7 +62,7 @@ El agente utiliza modelos de lenguaje (LLM) y una arquitectura supervisor-worker
   - **Supervisor-trabajadores**: Arquitectura donde un supervisor coordina tareas y varios trabajadores ejecutan funciones especializadas (extracción, resumen, análisis, etc.).
   - [Grafo del asistente chatbot especializado](src/app/graphs/supervisor_graph.py)
 
-![alt text](image-2.png)
+![alt text](image-4.png)
 
 ## Cómo Empezar
 
@@ -89,11 +89,15 @@ Para lanzar la interfaz de usuario, puedes ejecutar cualquiera de las siguientes
 
 - Para la versión completa:
   ```bash
-  streamlit run src/app/chat_app.py
+  streamlit run src/app/chat/chat_app.py
   ```
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
 - Para la versión simple:
   ```bash
-  streamlit run src/app/chat_app_simple.py
+  streamlit run src/app/chat/chat_app_simple.py
   ```
 
 - Para ejecutar el monitoreo de la evaluación:
