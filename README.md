@@ -91,6 +91,7 @@ Para lanzar la interfaz de usuario, puedes ejecutar cualquiera de las siguientes
   ```bash
   streamlit run src/app/chat/chat_app.py
   ```
+![alt text](image-5.png)
 
 ![alt text](image-3.png)
 
@@ -111,16 +112,23 @@ Asegúrate de tener instaladas las dependencias necesarias antes de ejecutar los
 
 En la carpeta [`notebooks/`](notebooks/) encontrarás ejemplos prácticos para explorar y probar las funcionalidades del agente:
 
+## Notebooks de Ejemplo
+
+En la carpeta [`notebooks/`](notebooks/) encontrarás ejemplos prácticos para explorar y probar las funcionalidades del agente:
+
 - [`notebooks/load_youtube_Video_Transcript_to_vdb.ipynb`](notebooks/load_youtube_Video_Transcript_to_vdb.ipynb):
   Explica cómo cargar transcripciones de videos de YouTube de expertos en inversión y almacenarlas en la base de datos vectorial (Pinecone) para su posterior análisis y recuperación. Incluye ejemplos de extracción y procesamiento de texto.
 
-- [`notebooks/02_resumen_noticias.ipynb`](notebooks/02_resumen_noticias.ipynb):
+- [`notebooks/Tool Calling News.ipynb`](notebooks/Tool%20Calling%20News.ipynb):
   Demuestra cómo obtener noticias financieras desde fuentes externas y generar resúmenes automáticos utilizando modelos de lenguaje. Permite comparar el texto original con el resumen generado.
 
-- [`notebooks/test_chat_langgraph.ipynb`](notebooks/test_chat_langgraph.ipynb):
+- [`notebooks/test_supervisor_graph.ipynb`](notebooks/test_supervisor_graph.ipynb):
   Presenta un flujo de conversación usando LangGraph y LangChain, mostrando cómo el agente responde preguntas del usuario, integra herramientas y recupera información relevante de la base de datos.
 
-- [`notebooks/Tool Calling News.ipynb`](notebooks/Tool Calling News.ipynb):
-  Ejemplo práctico de cómo el agente utiliza herramientas externas ("tool calling") para buscar, analizar y resumir noticias financieras en tiempo real, integrando los resultados en la conversación.
+- [`notebooks/optimizacion_portafolio.ipynb`](notebooks/optimizacion_portafolio.ipynb):
+  Ejemplo de cómo generar y optimizar portafolios de inversión personalizados según el perfil de riesgo del usuario, utilizando técnicas de optimización y datos financieros reales.
+
+- [`notebooks/test_chat_langgraph.ipynb`](notebooks/test_chat_langgraph.ipynb):
+  Muestra cómo interactuar con el agente conversacional usando LangGraph, integrando diferentes herramientas y fuentes de información para responder preguntas complejas.
 
 Cada notebook incluye celdas ejecutables y explicaciones paso a paso para facilitar la comprensión y experimentación.
