@@ -116,19 +116,19 @@ En la carpeta [`notebooks/`](notebooks/) encontrarás ejemplos prácticos para e
 
 En la carpeta [`notebooks/`](notebooks/) encontrarás ejemplos prácticos para explorar y probar las funcionalidades del agente:
 
-- [`notebooks/load_youtube_Video_Transcript_to_vdb.ipynb`](notebooks/load_youtube_Video_Transcript_to_vdb.ipynb):
+- [`notebooks/load_youtube_Video_Transcript_to_vdb.ipynb`](src/notebooks/load_youtube_Video_Transcript_to_vdb.ipynb):
   Explica cómo cargar transcripciones de videos de YouTube de expertos en inversión y almacenarlas en la base de datos vectorial (Pinecone) para su posterior análisis y recuperación. Incluye ejemplos de extracción y procesamiento de texto.
 
 - [`notebooks/Tool Calling News.ipynb`](notebooks/Tool%20Calling%20News.ipynb):
   Demuestra cómo obtener noticias financieras desde fuentes externas y generar resúmenes automáticos utilizando modelos de lenguaje. Permite comparar el texto original con el resumen generado.
 
-- [`notebooks/test_supervisor_graph.ipynb`](notebooks/test_supervisor_graph.ipynb):
+- [`notebooks/test_supervisor_graph.ipynb`](src/notebooks/test_supervisor_graph.ipynb):
   Presenta un flujo de conversación usando LangGraph y LangChain, mostrando cómo el agente responde preguntas del usuario, integra herramientas y recupera información relevante de la base de datos.
 
-- [`notebooks/optimizacion_portafolio.ipynb`](notebooks/optimizacion_portafolio.ipynb):
+- [`notebooks/optimizacion_portafolio.ipynb`](src/notebooks/optimizacion_portafolio.ipynb):
   Ejemplo de cómo generar y optimizar portafolios de inversión personalizados según el perfil de riesgo del usuario, utilizando técnicas de optimización y datos financieros reales.
 
-- [`notebooks/test_chat_langgraph.ipynb`](notebooks/test_chat_langgraph.ipynb):
+- [`notebooks/test_chat_langgraph.ipynb`](src/notebooks/test_chat_langgraph.ipynb):
   Muestra cómo interactuar con el agente conversacional usando LangGraph, integrando diferentes herramientas y fuentes de información para responder preguntas complejas.
 
 Cada notebook incluye celdas ejecutables y explicaciones paso a paso para facilitar la comprensión y experimentación.
