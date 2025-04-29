@@ -70,7 +70,11 @@ El agente utiliza modelos de lenguaje (LLM) y una arquitectura supervisor-worker
    ```bash
    git clone https://github.com/tu_usuario/investing_chat_agent.git
 
-2. cnfigurar variables de ambiente
+2. Instala librerias en requirements.txt
+   ```bash
+   pip install -r requirements.txt
+
+4. configurar variables de ambiente
 
     ```bash
     LANGCHAIN_TRACING_V2=true
@@ -83,6 +87,9 @@ El agente utiliza modelos de lenguaje (LLM) y una arquitectura supervisor-worker
     OPENAI_API_KEY = '......'
     PINECONE_API_KEY = '........'
     ```
+   **Nota**: Para ejecucion de la interface grafica son obligatorias -> TAVILY_API_KEY,OPENAI_API_KEY,PINECONE_API_KEY.
+   Para la ingesta y actualizacion de datos en base de datos vectorial son obligatorias->PINECONE_API_KEY,API_KEY_YOUTUBE.
+   
 ### Ejecución de la Aplicación con Streamlit
 
 Para lanzar la interfaz de usuario, puedes ejecutar cualquiera de las siguientes aplicaciones:
